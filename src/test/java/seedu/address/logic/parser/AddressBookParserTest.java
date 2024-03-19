@@ -85,10 +85,11 @@ public class AddressBookParserTest {
         assertEquals(new EditCommand(INDEX_FIRST, descriptor), command);
     }
 
-    @Test public void parseCommand_assign() throws Exception {
+    @Test
+    public void parseCommand_assign() throws Exception {
         AssignCommand command = (AssignCommand) parser.parseCommand(
                 AssignCommand.COMMAND_WORD + " " + INDEX_FIRST.getOneBased() + " "
-                + PREFIX_TO + " " + INDEX_FIRST.getOneBased());
+                        + PREFIX_TO + " " + INDEX_FIRST.getOneBased());
         assertEquals(new AssignCommand(INDEX_FIRST, INDEX_FIRST), command);
     }
 
@@ -120,8 +121,8 @@ public class AddressBookParserTest {
 
     @Test
     public void parseCommand_unrecognisedInput_throwsParseException() {
-        assertThrows(ParseException.class, String.format(MESSAGE_INVALID_COMMAND_FORMAT, HelpCommand.MESSAGE_USAGE), (
-        ) -> parser.parseCommand(""));
+        assertThrows(ParseException.class, String.format(MESSAGE_INVALID_COMMAND_FORMAT, HelpCommand.MESSAGE_USAGE), ()
+            -> parser.parseCommand(""));
     }
 
     @Test
