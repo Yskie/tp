@@ -1,0 +1,40 @@
+@startuml
+!include style.puml
+skinparam ClassFontColor #000000
+skinparam ClassBorderColor #000000
+skinparam ClassBackgroundColor #FFFFAA
+
+title Model
+
+package Groups {
+    class Group1 as "<u>2103T:GroupedUniquePersonList</u>"
+}
+
+package Persons {
+    class Person1 as "<u>Ivan:Person</u>"
+    class Person2 as "<u>Greg:Person</u>"
+    class Person3 as "<u>Dave:Person</u>"
+}
+
+Person1 -[hidden]right-> Person2
+Person2 -[hidden]right-> Person3
+
+Person1 -up-> Group1
+Person2 -up-> Group1
+Person3 -up-> Group1
+
+package TaskList_Ivan {
+    class Task1 as "<u>Task 1:Task</u>"
+}
+
+package TaskList_Greg {
+    class Task2 as "<u>Task 1:Task</u>"
+}
+
+package TaskList_Dave {
+    class Task3 as "<u>Task 1:Task</u>"
+}
+
+Task1 -up-> Person1
+Task2 -up-> Person2
+Task3 -up-> Person3

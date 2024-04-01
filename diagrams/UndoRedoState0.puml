@@ -7,15 +7,19 @@ skinparam ClassBackgroundColor #FFFFAA
 title Initial state
 
 package States {
-    class State1 as "<u>ab0:AddressBook</u>"
-    class State2 as "<u>ab1:AddressBook</u>"
-    class State3 as "<u>ab2:AddressBook</u>"
+    class ABState1 as "<u>ab0:AddressBook</u>"
+    class ABState2 as "<u>ab1:AddressBook</u>"
+    class TLState1 as "<u>tl0:TaskList</u>"
+    class TLState2 as "<u>tl1:TaskList</u>"
 }
-State1 -[hidden]right-> State2
-State2 -[hidden]right-> State3
-hide State2
-hide State3
+ABState1 -[hidden]right-> ABState2
+ABState2 -[hidden]right-> TLState1
+TLState1 -[hidden]right-> TLState2
+hide ABState2
+hide TLState2
 
-class Pointer as "Current State" #FFFFFF
-Pointer -up-> State1
+class Pointer as "Address Book State" #FFFFFF
+class Pointer2 as "Task List State" #FFFFFF
+Pointer -up-> ABState1
+Pointer2 -up-> TLState1
 @end
