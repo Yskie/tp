@@ -124,6 +124,7 @@
         "marking-a-task-marktask": "Marking a task: marktask",
         "unmarking-a-task-unmarktask": "Unmarking a task: unmarktask",
         "deleting-a-task-deletetask": "Deleting a task: deletetask",
+        "editing-a-task-edittask": "Editing a task: edittask",
         "listing-the-tasks-listtask": "Listing the tasks: listtask",
         "exiting-the-program-exit": "Exiting the program : exit",
         "saving-the-data": "Saving the data",
