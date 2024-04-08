@@ -126,6 +126,7 @@
         "deleting-a-task-deletetask": "Deleting a task: deletetask",
         "editing-a-task-edittask": "Editing a task: edittask",
         "listing-the-tasks-listtask": "Listing the tasks: listtask",
+        "finding-a-task-or-tasks-by-task-name-findtask": "Finding a task or tasks by task name: findtask",
         "exiting-the-program-exit": "Exiting the program : exit",
         "saving-the-data": "Saving the data",
         "editing-the-data-file": "Editing the data file",
@@ -140,7 +141,7 @@
       "src": "index.md",
       "title": "",
       "headings": {
-        "addressbook-level-3": "AddressBook Level-3"
+        "teamtracker": "TeamTracker"
       },
       "headingKeywords": {}
     },
