@@ -4,19 +4,20 @@ skinparam ClassFontColor #000000
 skinparam ClassBorderColor #000000
 skinparam ClassBackgroundColor #FFFFAA
 
-title After command "clear"
+title after command "listtask"
 
-package States <<rectangle>> {
-    class State1 as "<u>ab0:AddressBook</u>"
-    class State2 as "<u>ab1:AddressBook</u>"
-    class State3 as "<u>ab3:AddressBook</u>"
+package States {
+    class ABState1 as "<u>ab0:AddressBook</u>"
+    class ABState2 as "<u>ab1:AddressBook</u>"
+    class TLState1 as "<u>tl0:TaskList</u>"
+    class TLState2 as "<u>tl1:TaskList</u>"
 }
+ABState1 -[hidden]right-> ABState2
+ABState2 -[hidden]right-> TLState1
+TLState1 -[hidden]right-> TLState2
 
-State1 -[hidden]right-> State2
-State2 -[hidden]right-> State3
-
-class Pointer as "Current State" #FFFFFF
-
-Pointer -up-> State3
-note right on link: State ab2 deleted.
+class Pointer as "Address Book State" #FFFFFF
+class Pointer2 as "Task List State" #FFFFFF
+Pointer -up-> ABState2
+Pointer2 -up-> TLState2
 @end

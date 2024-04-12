@@ -4,7 +4,7 @@ skinparam ClassFontColor #000000
 skinparam ClassBorderColor #000000
 skinparam ClassBackgroundColor #FFFFAA
 
-title after command "addtask n/task1"
+title after command "addtask n/task1 ..."
 
 package States {
     class ABState1 as "<u>ab0:AddressBook</u>"
@@ -16,7 +16,6 @@ ABState1 -[hidden]right-> ABState2
 ABState2 -[hidden]right-> TLState1
 TLState1 -[hidden]right-> TLState2
 hide ABState2
-hide TLState1
 
 class Pointer as "Address Book State" #FFFFFF
 class Pointer2 as "Task List State" #FFFFFF
