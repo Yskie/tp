@@ -227,7 +227,7 @@ Step 7. The user executes `deletegroup gn/2103T` command to remove the group fro
 
 ### \[Proposed\] Undo/Redo Feature
 
-The proposed undo/redo mechanism is facilitated by `VersionedAddressBook` and `VersionedTaskList`. The `VersionedAddressBook` extends `AddressBook` with an undo/redo history, stored internally as an `addressBookStateList` and `addressBookStatePointer`. The `VersionedTaskList` extends `TaskList` with an undo/redo history, stored internally as an `taskListStateList` and `taskListStatePointer`. 
+The proposed undo/redo mechanism is facilitated by `VersionedAddressBook` and `VersionedTaskList`. The `VersionedAddressBook` extends `AddressBook` with an undo/redo history, stored internally as an `addressBookStateList` and `addressBookStatePointer`. The `VersionedTaskList` extends `TaskList` with an undo/redo history, stored internally a `taskListStateList` and `taskListStatePointer`. 
 
 Additionally, they implements the following operations:
 
@@ -256,7 +256,7 @@ Step 2. The user executes `addtask n/task1 …​` to add a new task. The `addta
 
 </box>
 
-Step 3. The user executes `add n/Brook …​` to add a new person.  The `add` command also calls `Model#commit()`, causing another modified task list state to be saved into the `addressBookStateList`.
+Step 3. The user executes `add n/Brook …​` to add a new person.  The `add` command also calls `Model#commit()`, causing another modified address book state to be saved into the `addressBookStateList`.
 
 <puml src="diagrams/UndoRedoState2.puml" alt="UndoRedoState2" />
 
