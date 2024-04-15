@@ -430,7 +430,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 1.  Should work on any _mainstream OS_ as long as it has Java `11` or above installed.
 2.  Should be able to be used for long periods without a noticeable sluggishness in performance for typical usage.
 3.  A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.
-4.  Should respond within one seconds.
+4.  Should respond within one second.
 5.  Documentation should be easy for users that are inexperienced in command line to follow.
 6.  User Interface should be straightforward and intuitive to navigate even for first-time users.
 7.  Should be able to store more than 10,000 tasks.
@@ -443,6 +443,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 * **System admin commands**: commands or instructions that are used through a command-line interface (CLI)
 or a terminal window
 * **Action**: TeamTracker processing a user command
+* **Exploratory Testing**: 
+* **Task Priority:**: 
+* **Task Deadline:**: 
 
 <div style="page-break-after: always;"></div>
 
