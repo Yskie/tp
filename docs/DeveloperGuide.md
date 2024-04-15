@@ -443,9 +443,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 * **System admin commands**: commands or instructions that are used through a command-line interface (CLI)
 or a terminal window
 * **Action**: TeamTracker processing a user command
-* **Exploratory Testing**: 
-* **Task Priority:**: 
-* **Task Deadline:**: 
 
 <div style="page-break-after: always;"></div>
 
