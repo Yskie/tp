@@ -227,7 +227,7 @@ Step 7. The user executes `deletegroup gn/2103T` command to remove the group fro
 
 ### \[Proposed\] Undo/Redo Feature
 
-The proposed undo/redo mechanism is facilitated by `VersionedAddressBook` and `VersionedTaskList`. The `VersionedAddressBook` extends `AddressBook` with an undo/redo history, stored internally as an `addressBookStateList` and `addressBookStatePointer`. The `VersionedTaskList` extends `TaskList` with an undo/redo history, stored internally a `taskListStateList` and `taskListStatePointer`. 
+The proposed undo/redo mechanism is facilitated by `VersionedAddressBook` and `VersionedTaskList`. The `VersionedAddressBook` extends `AddressBook` with an undo/redo history, stored internally as an `addressBookStateList` and `addressBookStatePointer`. The `VersionedTaskList` extends `TaskList` with an undo/redo history, stored internally as a `taskListStateList` and `taskListStatePointer`. 
 
 Additionally, they implements the following operations:
 
